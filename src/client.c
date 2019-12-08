@@ -303,6 +303,7 @@ void * omok(void* sd){
 		count++;
 	}
 	start = 2;									// omok()쓰레드 종료 전 timer쓰레드를 종료시키기 위해 start 변수를 2로 설정해 준다.
+	return 0;
 }
 
 /*
@@ -320,6 +321,7 @@ void * counting(void * arg){
 		}
 	}
 	printf("총 대국 시간 : %d초\n",timer);
+	return 0;
 }
 int main(int argc, char *argv[])
 {
